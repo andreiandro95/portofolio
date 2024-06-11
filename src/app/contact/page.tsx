@@ -3,6 +3,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
 import SendEmailForm from "./components/SendEmailForm";
 
+export const dynamic = "force-dynamic";
+
 export default function Page() {
   return (
     <main className="relative p-2 md:p-5 w-full overflow-y-auto scroll-smooth">

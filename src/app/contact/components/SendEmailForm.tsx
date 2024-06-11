@@ -15,7 +15,7 @@ const SendEmailForm = () => {
         },
         body: JSON.stringify(formObject),
       });
-
+      console.log(response);
       if (response.statusText === "OK") {
         alert("Email sent successfully");
         const form = event.target as HTMLFormElement;

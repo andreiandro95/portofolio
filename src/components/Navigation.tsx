@@ -6,12 +6,15 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaHome, FaReact } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";
 import { GrProjects } from "react-icons/gr";
-import { IoMdMail, IoMdClose } from "react-icons/io";
+import { IoMdMail } from "react-icons/io";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Navigation = () => {
   const { theme, toggleTheme }: any = useThemeContext();
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+  const pathname = usePathname();
+
   return (
     <>
       <div
@@ -33,11 +36,18 @@ const Navigation = () => {
               openMenu ? "justify-start" : "justify-center"
             } md:justify-start gap-2`}
           >
-            <FaHome size={25} className="min-w-6 dark:text-teal-300" />{" "}
+            <FaHome
+              size={25}
+              className={`min-w-6 dark:text-teal-300 ${
+                pathname === "/" && "text-blue-800"
+              }`}
+            />{" "}
             <span
               className={`transition-all ${
                 openMenu ? "inline-block" : "hidden"
-              } md:inline-block dark:text-teal-300`}
+              } md:inline-block dark:text-teal-300 ${
+                pathname === "/" && "text-blue-800 font-semibold"
+              }`}
             >
               Homepage
             </span>
@@ -49,11 +59,18 @@ const Navigation = () => {
               openMenu ? "justify-start" : "justify-center"
             } md:justify-start gap-2`}
           >
-            <IoPerson size={25} className="min-w-6 dark:text-teal-300" />{" "}
+            <IoPerson
+              size={25}
+              className={`min-w-6 dark:text-teal-300 ${
+                pathname.includes("about") && "text-blue-800"
+              }`}
+            />{" "}
             <span
               className={`transition-all ${
                 openMenu ? "inline-block" : "hidden"
-              } md:inline-block dark:text-teal-300`}
+              } md:inline-block dark:text-teal-300 ${
+                pathname.includes("about") && "text-blue-800 font-semibold"
+              }`}
             >
               About me
             </span>
@@ -65,11 +82,18 @@ const Navigation = () => {
               openMenu ? "justify-start" : "justify-center"
             } md:justify-start gap-2`}
           >
-            <FaReact size={25} className="min-w-6 dark:text-teal-300" />{" "}
+            <FaReact
+              size={25}
+              className={`min-w-6 dark:text-teal-300 ${
+                pathname.includes("skills") && "text-blue-800"
+              }`}
+            />{" "}
             <span
               className={`transition-all ${
                 openMenu ? "inline-block" : "hidden"
-              } md:inline-block dark:text-teal-300`}
+              } md:inline-block dark:text-teal-300 ${
+                pathname.includes("skills") && "text-blue-800 font-semibold"
+              }`}
             >
               Skills
             </span>
@@ -81,11 +105,18 @@ const Navigation = () => {
               openMenu ? "justify-start" : "justify-center"
             } md:justify-start gap-2`}
           >
-            <GrProjects size={25} className="min-w-6 dark:text-teal-300" />{" "}
+            <GrProjects
+              size={25}
+              className={`min-w-6 dark:text-teal-300 ${
+                pathname.includes("projects") && "text-blue-800"
+              }`}
+            />{" "}
             <span
               className={`transition-all ${
                 openMenu ? "inline-block" : "hidden"
-              } md:inline-block dark:text-teal-300`}
+              } md:inline-block dark:text-teal-300 ${
+                pathname.includes("projects") && "text-blue-800 font-semibold"
+              }`}
             >
               Projects
             </span>
@@ -97,11 +128,18 @@ const Navigation = () => {
               openMenu ? "justify-start" : "justify-center"
             } md:justify-start gap-2`}
           >
-            <IoMdMail size={25} className="min-w-6 dark:text-teal-300" />{" "}
+            <IoMdMail
+              size={25}
+              className={`min-w-6 dark:text-teal-300 ${
+                pathname.includes("contact") && "text-blue-800"
+              }`}
+            />{" "}
             <span
               className={`transition-all ${
                 openMenu ? "inline-block" : "hidden"
-              } md:inline-block dark:text-teal-300`}
+              } md:inline-block dark:text-teal-300 ${
+                pathname.includes("contact") && "text-blue-800 font-semibold"
+              }`}
             >
               Contact
             </span>

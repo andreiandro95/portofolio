@@ -6,7 +6,10 @@ export async function POST(req: NextRequest) {
     const content = await req.json();
 
     const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
       service: "gmail",
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASSWORD,
@@ -24,7 +27,7 @@ export async function POST(req: NextRequest) {
         `,
     };
 
-    transporter.sendMail(
+    await transporter.sendMail(
       mailOptions,
       (error: Error | null, info: { response: string }) => {
         if (error) {

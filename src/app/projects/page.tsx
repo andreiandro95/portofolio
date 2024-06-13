@@ -247,6 +247,30 @@ export default function Page() {
             </div>
           </div>
         </div>
+        {/* card */}
+        <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
+          <Image
+            src={`/projects/specula.jpg`}
+            alt="conference project poster"
+            width={300}
+            height={150}
+          />
+          <div className="py-5 text-center font-bold uppercase dark:text-white">
+            Specula Mag
+          </div>
+          <div className="black dark:text-white flex justify-around py-2 xl:hidden xl:group-hover:flex xl:flex-col xl:gap-2 xl:text-white xl:font-bold xl:items-center xl:justify-center  xl:absolute xl:bg-[rgba(0,0,0,0.65)] xl:w-full xl:h-full xl:top-0">
+            <div>
+              <a
+                href="https://speculamag.com/"
+                title="site location"
+                rel="noindex"
+                target="_blank"
+              >
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );

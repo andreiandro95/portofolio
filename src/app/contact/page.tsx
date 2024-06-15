@@ -1,7 +1,8 @@
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaFile } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
 import SendEmailForm from "./components/SendEmailForm";
+import DownloadCv from "./components/DownloadCv";
 
 export const dynamic = "force-dynamic";
 
@@ -23,18 +24,36 @@ export default function Page() {
             href="https://www.linkedin.com/in/andrei-andronachi-575923167/"
             target="_blank"
           >
-            <FaLinkedinIn className="dark:text-white" size={30} />
+            <FaLinkedinIn
+              className="dark:text-white"
+              size={30}
+              title="Linkedin profile"
+            />
           </a>
           <a href="https://github.com/andreiandro95" target="_blank">
-            <FaGithub className="dark:text-white" size={30} />
+            <FaGithub
+              className="dark:text-white"
+              size={30}
+              title="Github profile"
+            />
           </a>
           <span className="flex items-center gap-1 dark:text-white">
-            <FaLocationDot className="dark:text-white" size={30} /> Bucharest
+            <FaLocationDot
+              className="dark:text-white"
+              size={30}
+              title="location"
+            />{" "}
+            Bucharest
           </span>
           <span className="flex items-center gap-1 dark:text-white">
-            <MdAlternateEmail className="dark:text-white" size={30} />{" "}
+            <MdAlternateEmail
+              className="dark:text-white"
+              size={30}
+              title="E-mail address"
+            />{" "}
             andrei.andronachi95@gmail.com
           </span>
+          <DownloadCv />
         </div>
       </div>
     </main>

@@ -8,7 +8,7 @@ const DownloadCv = () => {
     if (confirm("Are you sure you want to download the CV?")) {
       e.preventDefault();
       const link = document.createElement("a");
-      link.href = "/CV Andrei Andronachi.pdf";
+      link.href = "/AndreiAndronachiCV.pdf";
       link.download = "cv_andrei_andronachi.pdf";
       document.body.appendChild(link);
       link.click();

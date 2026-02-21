@@ -66,7 +66,7 @@ const SendEmailForm = () => {
           disabled={isSending}
           type="submit"
           value="Send"
-          className="block w-full py-2 px-5 rounded-md border-2 border-blue-800 dark:border-teal-300 text-black dark:text-white cursor-pointer"
+          className={`${isSending ? "cursor-default" : "cursor-pointer"} block w-full py-2 px-5 rounded-md border-2 border-blue-800 dark:border-teal-300 text-black dark:text-white cursor-pointer`}
         />
       </form>
     </>

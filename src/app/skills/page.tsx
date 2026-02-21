@@ -82,6 +82,18 @@ export default function Page() {
         <div className="flex flex-col items-center justify-center">
           <div className="flex items-center h-[96px]">
             <Image
+              src={"/skills/ts.svg"}
+              width={96}
+              height={96}
+              alt="javascript logo"
+              className="lg:grayscale hover:filter-none transition-all"
+            ></Image>
+          </div>
+          <p className="text-base mt-2 dark:text-white">Typescript</p>
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex items-center h-[96px]">
+            <Image
               src={"/skills/jquery.svg"}
               width={96}
               height={96}

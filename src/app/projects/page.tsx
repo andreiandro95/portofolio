@@ -8,7 +8,7 @@ export default function Page() {
       </h3>
       <div className="flex flex-wrap gap-10">
         {/* card */}
-        <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
+        {/* <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
           <Image
             src={`/projects/netflix-homepage-clone.png`}
             alt="netflix clone poster"
@@ -40,9 +40,9 @@ export default function Page() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* card */}
-        <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
+        {/* <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
           <Image
             src={`/projects/restaurant-project.png`}
             alt="restaurant project poster"
@@ -74,9 +74,9 @@ export default function Page() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* card */}
-        <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
+        {/* <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
           <Image
             src={`/projects/store-project.png`}
             alt="store project poster"
@@ -108,9 +108,9 @@ export default function Page() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* card */}
-        <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group group">
+        {/* <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group group">
           <Image
             src={`/projects/rock-paper-scisor.png`}
             alt="rock paper scissors game poster"
@@ -142,9 +142,9 @@ export default function Page() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* card */}
-        <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
+        {/* <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
           <Image
             src={`/projects/to-do-list.png`}
             alt="to do list poster"
@@ -176,9 +176,9 @@ export default function Page() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* card */}
-        <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
+        {/* <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
           <Image
             src={`/projects/budget-calculator.png`}
             alt="budget calculator poster"
@@ -212,9 +212,9 @@ export default function Page() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* card */}
-        <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
+        {/* <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
           <Image
             src={`/projects/conference-project.jpg`}
             alt="conference project poster"
@@ -243,6 +243,30 @@ export default function Page() {
                 target="_blank"
               >
                 Github
+              </a>
+            </div>
+          </div>
+        </div> */}
+        {/* card */}
+        <div className="relative bg-backgorund-card-light dark:bg-background-card-dark rounded-md group">
+          <Image
+            src={`/projects/autocostsum.png`}
+            alt="Autocostsum site"
+            width={300}
+            height={150}
+          />
+          <div className="py-5 text-center font-bold uppercase dark:text-white">
+            AutoCostSum
+          </div>
+          <div className="black dark:text-white flex justify-around py-2 xl:hidden xl:group-hover:flex xl:flex-col xl:gap-2 xl:text-white xl:font-bold xl:items-center xl:justify-center  xl:absolute xl:bg-[rgba(0,0,0,0.65)] xl:w-full xl:h-full xl:top-0">
+            <div>
+              <a
+                href="https://autocostsum.com/"
+                title="site location"
+                rel="noindex"
+                target="_blank"
+              >
+                Live
               </a>
             </div>
           </div>

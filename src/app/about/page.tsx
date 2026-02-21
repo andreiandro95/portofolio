@@ -16,20 +16,18 @@ export default function Page() {
             About me
           </h3>
           <p className="text-xs mb-2 dark:text-white font-medium lg:text-sm">
-            I hold a Bachelor&apos;s degree in Applied Informatics from the
+            I hold a BachelorU+0060s degree in Applied Informatics from the
             &quot;Gheorghe Asachi&quot; Technical University, Faculty of
             Electrical Engineering. My coding journey began in high school, and
             in June 2020, I transitioned to web development. After six months of
-            self-learning, I secured a position as a web developer and have
-            since gained over three years of professional experience.
+            self-learning, I secured a position as a Web Developer, where I have
+            continued to grow professionally.
           </p>
           <p className="text-xs mb-2 dark:text-white font-medium lg:text-sm">
-            My skill set includes core technologies such as HTML, CSS,
-            JavaScript, MySql and PHP, along with proficiency in frameworks and
-            libraries like Bootstrap, Tailwind CSS, SASS, jQuery and React.
-            Throughout my career, I&apos;ve expanded my expertise to include
-            Magento 1 and 2, WordPress, Next.js, which I actively use in my
-            work.
+            I started working primarily with Magento 2, and a few months later
+            expanded my experience to include Magento 1 and WordPress. Since
+            2024, I have also been working with Next.js on modern web
+            applications.
           </p>
         </div>
       </div>

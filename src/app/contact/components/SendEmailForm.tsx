@@ -1,10 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 const SendEmailForm = () => {
+  const [isSending, setIsSending] = useState(false);
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsSending(true);
     const formData = new FormData(event.currentTarget);
     const formObject = Object.fromEntries(formData.entries());
     try {
@@ -20,6 +22,7 @@ const SendEmailForm = () => {
         alert("Email sent successfully");
         const form = event.target as HTMLFormElement;
         form.reset();
+        setIsSending(false);
       }
     } catch (err) {
       console.error(err);
@@ -60,6 +63,7 @@ const SendEmailForm = () => {
           required
         ></textarea>
         <input
+          disabled={isSending}
           type="submit"
           value="Send"
           className="block w-full py-2 px-5 rounded-md border-2 border-blue-800 dark:border-teal-300 text-black dark:text-white cursor-pointer"

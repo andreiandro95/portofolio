@@ -16,18 +16,20 @@ export default function Page() {
             About me
           </h3>
           <p className="text-xs mb-2 dark:text-white font-medium lg:text-sm">
-            I hold a BachelorU+0060s degree in Applied Informatics from the
-            &quot;Gheorghe Asachi&quot; Technical University, Faculty of
-            Electrical Engineering. My coding journey began in high school, and
-            in June 2020, I transitioned to web development. After six months of
-            self-learning, I secured a position as a Web Developer, where I have
-            continued to grow professionally.
+            Frontend Developer specializing in building and customizing modern
+            web applications. I began my professional journey with Magento 2
+            development in 2020, later expanding into Magento 1 and
+            WordPress-based solutions. Since 2024, I have been working with
+            React, Next.js, and TypeScript to develop scalable, component-driven
+            applications.
           </p>
           <p className="text-xs mb-2 dark:text-white font-medium lg:text-sm">
-            I started working primarily with Magento 2, and a few months later
-            expanded my experience to include Magento 1 and WordPress. Since
-            2024, I have also been working with Next.js on modern web
-            applications.
+            I focus on transforming UI designs into responsive, high-performance
+            interfaces, developing custom modules and integrations, and building
+            maintainable full-stack solutions using modern tools such as Prisma
+            and server-side rendering frameworks. I am committed to writing
+            clean, scalable code and continuously refining my expertise within
+            the JavaScript ecosystem
           </p>
         </div>
       </div>

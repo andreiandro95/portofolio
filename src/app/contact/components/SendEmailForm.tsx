@@ -4,8 +4,10 @@ import React, { useState } from "react";
 
 const SendEmailForm = () => {
   const [isSending, setIsSending] = useState(false);
+  const [showLoader, setShowLoader] = useState(false);
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setShowLoader(true);
     setIsSending(true);
     const formData = new FormData(event.currentTarget);
     const formObject = Object.fromEntries(formData.entries());
@@ -19,6 +21,7 @@ const SendEmailForm = () => {
       });
 
       if (response.status === 200) {
+        setShowLoader(false);
         alert("Email sent successfully");
         const form = event.target as HTMLFormElement;
         form.reset();
@@ -69,6 +72,7 @@ const SendEmailForm = () => {
           className={`${isSending ? "cursor-default" : "cursor-pointer"} block w-full py-2 px-5 rounded-md border-2 border-blue-800 dark:border-teal-300 text-black dark:text-white cursor-pointer`}
         />
       </form>
+      {showLoader && <div className="loader"></div>}
     </>
   );
 };
